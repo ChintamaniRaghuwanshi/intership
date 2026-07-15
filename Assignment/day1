@@ -3,9 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Day 1 Assignment</title>
 </head>
 <body>
+    <nav>
+        <a href="#About">About me</a>
+        <a href="#Skill">MY Skill</a>
+        <a href="#Project">My Projects</a>
+         <a href="#Contact">My Contact</a>
+         <a href="#Learning">My Learning Jounrey</a>
+    </nav>
+    <header> 
+    <h1>Hello, I'm Chintamani Raghuwanshi </h1>
+    <p>I'm a passionate Web Developer from Bengulure</p>
+    <a href="#Hire">Hire me</a>
+    </header>
+    <section id="About">
+        <h2>About me</h2>
+        <img src="C:\Users\Chintamani\Desktop\intership\profilr pic.jpg" alt="" width="200px" height="200px"><br>
+        <p>I was always curious about how a web work so end up with learning HTML, CSS,JAVESCRIPT and REACT. </p>        
+    </section>
+    <section id="Skills">
+        <h2>My Skills</h2>
+        <ul type="circle">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Javescript</li>
+            <li>React</li>
+        </ul>
+    </section>
+    <section id="Project">
+        <h2>My Projects</h2>
+        <h3>Project 1</h3>
+        <p>Description of project 1</p>
+        <a href="#View project">view project</a>
+    </section>
+    <section id="Contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:chintamaniraghuwanshi@gmail.com">chintamaniraghuwanshi@gmail.com</a></p>
+        <p>Linkedin: <a href="https://www.linkedin.com/in/chintamani-raghuwanshi-7734b3412/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BhjmWxw8jSTqFZdg93m%2BhAQ%3D%3D">My Linkedin </a></p>
+        <P>Github: <a href="https://github.com/ChintamaniRaghuwanshi">My Github</a></P>
+        
+    </section>
+    <section>
+
+    </section>
+
     
+    <footer><p>&copy;2026 Chintamani Raghuwanshi. All the rights reserved.</p></footer>
 </body>
 </html>
