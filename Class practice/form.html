@@ -3,35 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FORM</title>
 </head>
 <body>
     <form action="">
+        <!-- NAME -->
         <label for="Name">NAME:</label><br><br>
         <input type="text" placeholder="Enter your name" name="Name" id="Name" ><br><br>
+        <!-- AGE -->
         <label for="Age">AGE:</label><br><br>
         <input type="number" placeholder="Enter your age" name="Age" id="Age" ><br><br>
+        <!-- EMAIL -->
         <label for="Email">EMAIL ADDRESS:</label><br><br>
         <input type="email" placeholder="Enter your email" id="Email" name="Email"><br><br>
+        <!-- PASSWORD -->
         <label for="password">PASSWORD:</label><br><br>
         <input type="password" placeholder="Enter your password" name="password" id="password" minlength="6"><br><br>
+        <!-- BUTTON -->
         <button type="submit">SUMBIT</button>
         <button type="reset">RESET</button>
+        <!-- RADIO -->
         <P>Select your gender</P>
         <input type="radio" name="gender" id="Male" value="Male">
         <label for="gender">Male</label>
         <input type="radio" name="gender" id="Female" value="Female">
         <label for="gender">Female</label><br>
         <br>
+        <!-- CHECKBOX -->
         <label for="Technologies">TECHNOLOGIES:</label>
         <input type="checkbox" name="Technologies" id="Technologies" value="html"><br>
         <br>
+        <!-- DROPDOWN -->
         <label for="country">COUNTRY:</label>
         <select name="country" id="country">
             <option value="select">Select your country</option>
             <option value="India">INDIA</option>
             <option value="UK">UK</option>
-        </select>
+        </select><br>
+        <br>
+        <!-- TEXTAREA -->
+         <label for="Message">Message:</label>
+         <textarea name="Message" id="Message" placeholder="Message"></textarea><br>
+         <br>
+         <!--FILE UPLOAD  -->
+         <label for="File">File Upload:</label>
+         <input type="file" name="File" id="File"><br>
+         <br>
+         <!-- DATA BICKER -->
+          <label for="dob">Date of birth:</label>
+          <input type="date" name="dob" id="dob">
+
 
     </form>
 
