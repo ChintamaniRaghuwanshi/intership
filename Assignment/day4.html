@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Chintamani Raghuwanshi</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">CR</div>
+            <ul>
+                <li> <a href="#About">About me</a></li>
+                <li><a href="#Skill">MY Skill</a></li>
+                <li><a href="#Project">My Projects</a></li>
+                <li><a href="#Contact">My Contact</a></li>
+            </ul>
+       <button class="theme-toogle" aria-label="Toogle dark mode" title="Toogle dark mode" style="width: 50px;height: 50px;">🌙</button>
+       <button class="menu-toogle" aria-labelledby="Toogle navigation" aria-expanded="false" style="width: 50px;height: 50px;" >≡</button>      
+    </nav>
+    </header>
+    <main>
+        <section id="hero" class="hero-section">
+            <h1>Hello, I'm Chintamani Raghuwanshi </h1>
+            <p>I'm a passionate Web Developer from Bengulure</p>
+            <div class="hero button">
+                <a href="#Project">View my work</a><br>
+                <a href="#Contact">Contact Me</a>
+            </div>
+        </section>
+
+        <section id="About">
+        <h2>About me</h2>
+        <figure class="proflie imag">
+            <img src="C:\Users\Chintamani\Desktop\intership\profilr pic.jpg" alt="" width="200px" height="200px">
+            <figcaption> My Profile Photo</figcaption>
+        </figure>
+        <br>
+        <p>I was always curious about how a web work so end up with learning HTML, CSS,JAVESCRIPT and REACT. </p>        
+         </section>
+
+          <section id="Skills">
+
+             <h2>My Skills</h2>
+             <div class="skill-grid">
+            <div class="skill-item" data-level="90">HTML</div>
+             <div class="skill-item" data-level="80">CSS</div>
+              <div class="skill-item" data-level="75">Javescript</div>
+               <div class="skill-item" data-level="60">React</div>
+             </div>
+           </section>
+
+           <section id="Project" class="project-section">
+             <h2>My Projects</h2>
+             <div class="project-grid">
+                <article class="project-card" data-category="web">
+                <img src="C:\Users\Chintamani\Desktop\intership\7a8d159c4d4b4682d48afbcbdb3d318e_fgraphic.webp" alt="Weather App screenshot" width="300px" height="200px">
+                <h3>Weather app</h3>
+                <p>Real time weather dashboard using Open Weather API</p>
+                <div class="projrct_tag">
+                    <span>React</span><span>API</span>
+                </div>
+                <a href="#">Live demo</a>
+                <a href="#">Github</a>
+                </article>
+             </div>
+            </section>
+            <section id="contact" class="contact-section">
+                <h2>Get in contact</h2>
+                <form action="#" method="post" novalidate>
+                    <div class="form-group">
+                        <label for="naame">Name:</label>
+                        <input type="text" name="name" id="name" required>
+                        
+                         </div>
+                         <br>
+                        <div class="form-group">
+                             <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" required>
+                        
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea name="message" id="message" placeholder="Message"></textarea>
+
+                        </div>
+                        
+                        <br>
+                        <div class="button-card">
+                            <button type="submit">Send message</button>
+                        </div>
+
+                       
+                   
+                </form>
+            </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy;2026 Chintamani Raghuwanshi. All the rights reserved.</p>
+        <nav aria-label="soicalmedia links">
+            <a href="" target="_blank">Github</a>
+            <a href="" target="_blank">LinkedIn</a>
+        </nav>
+    
+    </footer>
+</body>
+</html>
