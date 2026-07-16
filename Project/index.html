@@ -3,75 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio [Chintamani Raghuwanshi]</title>
+    <title>My Portfolio Chintamani Raghuwanshi</title>
 </head>
 <body>
-    <nav>
-        <a href="#About">About me</a>
-        <a href="#Skill">MY Skill</a>
-        <a href="#Project">My Projects</a>
-         <a href="#Contact">My Contact</a>
+    <header>
+        <nav>
+            <div class="logo">CR</div>
+            <ul>
+                <li> <a href="#About">About me</a></li>
+                <li><a href="#Skill">MY Skill</a></li>
+                <li><a href="#Project">My Projects</a></li>
+                <li><a href="#Contact">My Contact</a></li>
+            </ul>
+       <button class="theme-toogle" aria-label="Toogle dark mode" title="Toogle dark mode" style="width: 50px;height: 50px;">🌙</button>
+       <button class="menu-toogle" aria-labelledby="Toogle navigation" aria-expanded="false" style="width: 50px;height: 50px;" >≡</button>      
     </nav>
-    <header> 
-    <h1>Hello, I'm Chintamani Raghuwanshi </h1>
-    <p>I'm a passionate Web Developer from Bengulure</p>
-    <a href="#Hire">Hire me</a>
     </header>
-    <section id="About">
+    <main>
+        <section id="hero" class="hero-section">
+            <h1>Hello, I'm Chintamani Raghuwanshi </h1>
+            <p>I'm a passionate Web Developer from Bengulure</p>
+            <div class="hero button">
+                <a href="#Project">View my work</a><br>
+                <a href="#Contact">Contact Me</a>
+            </div>
+        </section>
+
+        <section id="About">
         <h2>About me</h2>
-        <img src="C:\Users\Chintamani\Desktop\intership\profilr pic.jpg" alt="" width="200px" height="200px"><br>
+        <figure class="proflie imag">
+            <img src="C:\Users\Chintamani\Desktop\intership\profilr pic.jpg" alt="" width="200px" height="200px">
+            <figcaption> My Profile Photo</figcaption>
+        </figure>
+        <br>
         <p>I was always curious about how a web work so end up with learning HTML, CSS,JAVESCRIPT and REACT. </p>        
-    </section>
-    <section id="Skills">
-        <h2>My Skills</h2>
-        <ul type="circle">
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>Javescript</li>
-            <li>React</li>
-        </ul>
-    </section>
-    <section id="Project">
-        <h2>My Projects</h2>
-        <h3>Project 1</h3>
-        <p>Description of project 1</p>
-        <a href="#View project">view project</a>
-    </section>
+         </section>
 
-    <h2>Skill Table</h2>
-     <table border="5px solid">
-        <tr>
-            <th>Technology</th>
-            <th>Proficiency</th>
-            <th>Years of Experience</th>
+          <section id="Skills">
 
-        </tr>
-        <tr>
-            <td>Python</td>
-            <td>Intermediate</td>
-            <td> 2</td>
-        </tr>
-        <tr>
-            <td>HTML5</td>
-            <td>Intermediate</td>
-            <td> 1</td>
-        </tr>
-        <tr>
-            <td>CSS3</td>
-            <td>Intermediate</td>
-            <td> 1</td>
-        </tr>
-        <tr>
-            <td>Javescript</td>
-            <td>Intermediate</td>
-            <td> 1 </td>
-        </tr>
-        <tr>
-            <td>React</td>
-            <td>Intermediate</td>
-            <td> 1</td>
-        </tr>
-    </table>
+             <h2>My Skills</h2>
+             <div class="skill-grid">
+            <div class="skill-item" data-level="90">HTML</div>
+             <div class="skill-item" data-level="80">CSS</div>
+              <div class="skill-item" data-level="75">Javescript</div>
+               <div class="skill-item" data-level="60">React</div>
+             </div>
+           </section>
+
+           <section id="Project" class="project-section">
+             <h2>My Projects</h2>
+             <div class="project-grid">
+                <article class="project-card" data-category="web">
+                <img src="project.jpg" alt="Weather App screenshot">
+                <h3>Weather app</h3>
+                <p>Real time weather dashboard using Open Weather API</p>
+                <div class="projrct_tag">
+                    <span>React</span><span>API</span>
+                </div>
+                <a href="#">Live demo</a>
+                <a href="#">Github</a>
+                </article>
+             </div>
+            </section>
+    </main>
+
+    
+    
    
     <section id="Contact">
         <h2>Contact Me</h2>
