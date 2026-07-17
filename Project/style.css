@@ -47,5 +47,11 @@ body{
 }
 .hero-section{
     background: linear-gradient(rgb(233, 80, 80),rgb(233, 170, 53));
+    color: #F4F6F8;
+    text-align: center;
+}
+.hero-section h1{
+    font-size: 45px;
+    margin-bottom: 20px;
 }
 
