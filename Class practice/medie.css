@@ -1,0 +1,24 @@
+.project-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+@media(min-width:768px){
+    .project-grid{
+        grid-template-columns: repeat(2,);
+    }
+    .herosection{
+        font-size: 2.5rem;
+
+    }
+}
+@media(min-width:1024px){
+    .project-grid{
+        grid-template-columns: repeat();
+    }
+    .herosection{
+        font-size: 3.5rem;
+    }
+}
+@media(min-width:1440px){
+    
+}
