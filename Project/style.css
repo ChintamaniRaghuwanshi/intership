@@ -62,8 +62,9 @@ header{
 .skill-grid{
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
-    gap: 20px;
+    gap: 40px;
     margin-top: 40px;
+    text-align: center;
 }
 .skill-item{
     background-color: var(--light) ;
@@ -195,3 +196,51 @@ form-group{
     box-shadow: 0 0 0 3px rgba(27,79,114,0.15);
 
 }
+.site-footer{
+    background-color: var(--primary);
+    color: rgba(255,255,255,0.8);
+    text-align: center;
+    padding: 40px 5%;
+
+}
+.site-footer a{
+    text-decoration: none;
+    color: #DDD;
+}
+.menu-toogle{
+    background: none;
+    border: none;
+    color:var(--white) ;
+    font-size: 30px;
+    cursor: pointer;
+}
+.theme-toogle{
+    background:none;
+    border: none;
+    color:var(--light);
+    font-size: 30px;
+    cursor: pointer;
+}
+@media (max-width:768px){
+    .menu-toggle{
+        display:block;
+    }
+}
+    .nav-links{
+        display:none;
+        position:absolute;
+        top:70px;
+        left:0;
+        width:100%;
+        background:#1B4F72;
+        flex-direction:column;
+        text-align:center;
+        padding:20px 0;
+        gap:20px;
+    }
+ 
+    .nav-links.open{
+        display:flex;
+    }
+ 
+ 
