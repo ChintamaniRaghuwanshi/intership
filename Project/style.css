@@ -150,3 +150,48 @@ section h2::after{
     border-radius: 2px;
 
 }
+
+@keyframes fadeinup{
+    from{opacity: 0; transform: translateY(30px);}
+    t0{opacity: 1; transform: translateY(0);}
+}
+.tagline{
+    animation: fadeinup 0.8s ease 0.2s both;
+}
+.hero-button{
+     animation: fadeinup 0.8s ease 0.2s both;
+}
+.hero-section h1{
+    animation: fadeinup 0.8s ease 0.2s both;
+
+}
+.contact-section{
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+form-group{
+    margin-bottom: 30px;
+}
+.form-group label{
+    display: block;
+    font-weight: 600px;
+    margin-bottom: 8px;
+    color: var(--primary);
+}
+.form-group input,.form-group textarea{
+    width: 100%;
+    padding: 14px 16px;
+    border: 2px solid #DDD;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    transition:border-color 0.3s;
+
+}
+.form-group input:focus,.form-group textarea:focus{
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(27,79,114,0.15);
+
+}
