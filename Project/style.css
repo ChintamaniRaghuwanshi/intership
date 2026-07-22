@@ -208,6 +208,7 @@ form-group{
     color: #DDD;
 }
 .menu-toogle{
+    display: none;
     background: none;
     border: none;
     color:var(--white) ;
