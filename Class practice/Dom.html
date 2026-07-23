@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .active{
+            color: green;
+        }
+        .hidden{
+            display: none;
+        }
+        .dark{
+            background-color: aqua;
+            padding: 10px;
+            color: aliceblue;
+        }
+        .new{
+            color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="heading">JAVESCRIPT DOM</h1>
+    <script>
+        let hell=document.querySelector("h1")
+        hell.classList.replace("heading","active")
+        console.log(hell.className);
+    </script>
+</body>
+</html>

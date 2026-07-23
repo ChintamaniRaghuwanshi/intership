@@ -20,3 +20,4 @@ console.log(person["myname"])
 let mark=[90,80,70,60]
 console.log(mark)
 console.log(typeof mark)
+ 
