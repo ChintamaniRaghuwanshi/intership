@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio Chintamani Raghuwanshi</title>
-    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -39,20 +39,10 @@
         <br>
         <p>I was always curious about how a web work so end up with learning HTML, CSS,JAVESCRIPT and REACT. </p>        
          </section>
-         <section id="About">
-        <h2>About me2</h2>
-        <figure class="proflie imag">
-            <img src="profilepic.jpg" alt="" width="200px" height="200px">
-            <figcaption> My Profile Photo</figcaption>
-        </figure>
-        <br>
-        <p>I was always curious about how a web work so end up with learning HTML, CSS,JAVESCRIPT and REACT. </p>        
-         </section>
 
+          <section id="Skills">
 
-          <section class="skill-section" id="Skills">
-
-             <h2 class="heading">My Skills</h2>
+             <h2>My Skills</h2>
              <div class="skill-grid">
             <div class="skill-item" data-level="90">HTML</div>
              <div class="skill-item" data-level="80">CSS</div>
@@ -101,7 +91,7 @@
             </section>
             <section id="contact" class="contact-section">
                 <h2>Get in contact</h2>
-                <form id="contact-form" action="" method="post" novalidate>
+                <form action="https://www.ramaiahacademy.com/" method="post" novalidate>
                     <div class="form-group">
                         <label for="naame">Name:</label>
                         <input type="text" name="name" id="name" placeholder="Enter your Name" required>
@@ -122,7 +112,7 @@
                         
                         <br>
                         
-                            <button class="button" type="submit">Send message</button>
+                            <button class="btn" type="submit">Send message</button>
                         
 
                        
@@ -140,38 +130,7 @@
         <p>&copy;2026 Chintamani Raghuwanshi. All the rights reserved.</p>
     </footer>
     <script>
-        let element= document.querySelector(".hero-section")
-        let parent= element.parentElement
-        console.log(parent);
-        let children= element.children
-        console.log(children);
-        let sibling=element.nextElementSibling
-        console.log(sibling);
-        let first=element.firstElementChild
-        console.log(first);
-
-       let real=document.querySelector(".skill-section")
-       console.log(real.textContent);
-       console.log(real.innerHTML);
-       console.log(real.id);
-       console.log(real.className);
-       real.textContent="Javescript DOM"
-       real.innerHTML="Title with <span>HTML</span>"
-       real.style.color="red"
-       real.style.fontSize="2rem"
-       real.setAttribute('id','myskills')
-       console.log(real.id);
        
-       let hell=document.createElement("div");
-       hell.className="project-card"
-       hell.innerHTML=`<img src="hello.webp" alt="weather img" width="200px" height="200px">
-       <div class="project-body">
-        <h3>new project</h3>
-        <p>this is created by javescript</p>
-        </div>`
-        let addproject=document.querySelector(".project-grid")
-        addproject.appendChild(hell)
-        
-     </script>
+    </script>
 </body>
 </html>
