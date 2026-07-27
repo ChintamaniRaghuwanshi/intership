@@ -14,3 +14,36 @@ if (heroTitle){
     heroTitle.textContent = `${getGreeting()}, I'm Chintamani Raghuwanshi 🤗`;
     
 }
+//Dark Mode
+ 
+let themeBtn = document.querySelector(".theme-toggle");
+ 
+function updateThemeIcon(theme) {
+    themeBtn.textContent = theme === "dark" ? "🌙" : "☀️";
+}
+ 
+if (themeBtn) {
+ 
+    let savedTheme = localStorage.getItem("theme") || "light";
+ 
+    document.body.dataset.theme = savedTheme;
+ 
+    updateThemeIcon(savedTheme);
+ 
+    themeBtn.addEventListener("click", () => {
+ 
+        let nextTheme =
+            document.body.dataset.theme === "light"
+                ? "dark"
+                : "light";
+ 
+        document.body.dataset.theme = nextTheme;
+ 
+        localStorage.setItem("theme", nextTheme);
+ 
+        updateThemeIcon(nextTheme);
+ 
+    });
+ 
+}
+ 
