@@ -44,4 +44,39 @@ if (themeBtn) {
     });
  
 }
- 
+
+let menuToggle=document.querySelector(".menu-toggle");
+let navLinks=document.querySelector(".nav-link");
+menuToggle.addEventListener('click',()=>{
+    navLinks.classList.toggle("open");
+    menuToggle.setAttribute('aria-expanded',navLinks.classList.contains('open'));
+})
+
+let header=document.querySelector(".site-header")
+window.addEventListener("scroll",()=>{
+    if(window.scrollY>50){
+        header.classList.add('scrolled');
+    }
+    else{
+        header.classList.remove('scrolled');
+    }
+
+})
+let section=document.querySelectorAll("section[id]");
+let navItems=document.querySelectorAll('.nav-link a')
+window.addEventListener("scroll",()=>{
+    let current='';
+    section.forEach(section=>{
+        if(window.scrollY>=section.offsetTop-100){
+            current=section.getAttribute('id');
+        }
+    });
+
+
+naIitems.forEach(link=>{
+    link.classList.remove('active');
+    if(link.getAttribute('href')===`#${current}`){
+        link.classList.add('active');
+    }
+});
+});
