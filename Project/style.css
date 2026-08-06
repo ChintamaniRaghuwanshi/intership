@@ -81,7 +81,7 @@ header{
     transform:translateY(-5px);
     box-shadow: 0px 10px 30px rgb(4, 95, 95);
 }
-.project-grid{
+.projects-grid{
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
     gap: 40px;
@@ -121,12 +121,12 @@ header{
     cursor: pointer;
     border: 2px solid transparent;
 }
-.button-card{
+.btn-primary{
     background-color: var(--accent);
     color: var(--white);
 
 }
-.button-card:hover{
+.btn-primary:hover{
     background-color: transparent;
     color: var(--accent);
     border-color: var(--accent);
@@ -243,6 +243,7 @@ form-group{
     .nav-links.open{
         display:flex;
     }
+
     body,.site-header,
     .hero-section,
     .skill-item,
@@ -251,7 +252,7 @@ form-group{
     .site-footer,
     input,
     textarea,
-    .btn button-card,
+    .btn,
     a{
         transition: all 0.3s ease;
     }
